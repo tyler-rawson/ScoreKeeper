@@ -9,10 +9,16 @@ public class MainActivity extends AppCompatActivity {
     int scoreTeamA = 0; //creates global variable to store each team's respective score
     int scoreTeamB = 0;
 
+    TextView team_A_score;
+    TextView team_B_score;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        team_A_score = (TextView) findViewById(R.id.team_A_score); // declare team_A_score as textView, which we identify using findViewById
+        team_B_score = (TextView) findViewById(R.id.team_B_score);
     }
 
     public void addPoints(View v) { // this method determines which button called the method so we know how many points to add to the score.
@@ -56,9 +62,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void displayPoints(int score, String team) { //this method accepts two parameters - the first being the score to add, and the second being the team to add it to.
-        TextView team_A_score = (TextView) findViewById(R.id.team_A_score); // declare team_A_score as textView, which we identify using findViewById
-        TextView team_B_score = (TextView) findViewById(R.id.team_B_score);
-
         switch (team) { //update the score so the user can actually see it -- as the user won't be able to see the global variable.
             case "a": // if team a called this method
                 team_A_score.setText(String.valueOf(score)); //set the text of team A to the int score, passed on from addPoints method earlier.
