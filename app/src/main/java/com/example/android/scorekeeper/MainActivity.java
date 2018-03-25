@@ -1,4 +1,4 @@
-package com.example.android.courtcounter;
+package com.example.android.scorekeeper;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -31,6 +31,16 @@ public class MainActivity extends AppCompatActivity {
     public void displayForTeamB(int score) {
         TextView team_B_score = (TextView) findViewById(R.id.team_B_score);
         team_B_score.setText(String.valueOf(score));
+    }
+
+    public void sixPointsA(View v) {
+        scoreTeamA += 6;
+        displayForTeamA(scoreTeamA);
+    }
+
+    public void sixPointsB(View v) {
+        scoreTeamB += 6;
+        displayForTeamB(scoreTeamB);
     }
 
     public void threePointsA(View v) {

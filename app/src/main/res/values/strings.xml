@@ -1,9 +1,11 @@
 <resources>
-    <string name="app_name">Court Counter</string>
+    <string name="app_name">Score Keeper</string>
     <string name="teamA">Team A</string>
     <string name="teamB">Team B</string>
-    <string name="freeThrow">Free Throw</string>
-    <string name="twoPoints">+2 Points</string>
-    <string name="threePoints">+3 Points</string>
+    <string name="touchDown">Touchdown (+6)</string>
+    <string name="fieldGoal">Field Goal (+3)</string>
+    <string name="safety">Safety (+2)</string>
+    <string name="extraPoint">Extra Point (+1)</string>
     <string name="resetButton">Reset</string>
+    <string name="footballStadium">Football stadium with bright lights.</string>
 </resources>
