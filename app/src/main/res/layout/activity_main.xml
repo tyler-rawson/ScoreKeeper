@@ -38,27 +38,23 @@
                         style="@style/teamScoreStyle" />
 
                     <Button
+                        android:id="@+id/buttonTeamAplus6"
+                        style="@style/buttonStyle"
+                        android:text="@string/touchDown" />
+
+                    <Button
                         android:id="@+id/buttonTeamAplus3"
                         style="@style/buttonStyle"
-                        android:onClick="sixPointsA"
-                        android:text="@string/touchDown" />
+                        android:text="@string/fieldGoal" />
 
                     <Button
                         android:id="@+id/buttonTeamAplus2"
                         style="@style/buttonStyle"
-                        android:onClick="threePointsA"
-                        android:text="@string/fieldGoal" />
-
-                    <Button
-                        android:id="@+id/buttonTeamAplus1"
-                        style="@style/buttonStyle"
-                        android:onClick="twoPointsA"
                         android:text="@string/safety" />
 
                     <Button
                         android:id="@+id/buttonTeamAExtraPoint"
                         style="@style/buttonStyle"
-                        android:onClick="onePointA"
                         android:text="@string/extraPoint" />
                 </LinearLayout>
 
@@ -82,27 +78,23 @@
                         style="@style/teamScoreStyle" />
 
                     <Button
+                        android:id="@+id/buttonTeamBplus6"
+                        style="@style/buttonStyle"
+                        android:text="@string/touchDown" />
+
+                    <Button
                         android:id="@+id/buttonTeamBplus3"
                         style="@style/buttonStyle"
-                        android:onClick="sixPointsB"
-                        android:text="@string/touchDown" />
+                        android:text="@string/fieldGoal" />
 
                     <Button
                         android:id="@+id/buttonTeamBplus2"
                         style="@style/buttonStyle"
-                        android:onClick="threePointsB"
-                        android:text="@string/fieldGoal" />
-
-                    <Button
-                        android:id="@+id/buttonTeamBplus1"
-                        style="@style/buttonStyle"
-                        android:onClick="twoPointsB"
                         android:text="@string/safety" />
 
                     <Button
                         android:id="@+id/buttonTeamBExtraPoint"
                         style="@style/buttonStyle"
-                        android:onClick="onePointB"
                         android:text="@string/extraPoint" />
                 </LinearLayout>
 

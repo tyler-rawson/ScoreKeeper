@@ -22,6 +22,7 @@
         <item name="android:gravity">center</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:onClick">addPoints</item>
     </style>
 
     <style name="teamNameStyle" parent="@android:style/Widget.TextView">
