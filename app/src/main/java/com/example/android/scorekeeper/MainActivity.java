@@ -6,18 +6,17 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    final String STR_TEAM_A = "a";
-    final String STR_TEAM_B = "b";
-    int scoreTeamA = 0; //creates global variable to store each team's respective score
-    int scoreTeamB = 0;
-    TextView team_A_score;
-    TextView team_B_score;
+    private final String STR_TEAM_A = "a";
+    private final String STR_TEAM_B = "b";
+    private int scoreTeamA = 0; //creates global variable to store each team's respective score
+    private int scoreTeamB = 0;
+    private TextView team_A_score;
+    private TextView team_B_score;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         team_A_score = findViewById(R.id.team_A_score); // declare team_A_score as textView, which we identify using findViewById
         team_B_score = findViewById(R.id.team_B_score);
     }
@@ -41,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
                 scoreTeamA += 1;
                 displayPoints(scoreTeamA, STR_TEAM_A);
                 break;
-
             // team B
             case R.id.buttonTeamBplus6:
                 scoreTeamB += 6;
